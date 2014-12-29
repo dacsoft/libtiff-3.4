@@ -1,0 +1,80 @@
+LIBRARY LIBTIFF
+EXETYPE WINDOWS
+CODE PRELOAD MOVEABLE DISCARDABLE
+DATA PRELOAD MOVEABLE MULTIPLE
+HEAPSIZE 4096
+STACKSIZE 8192
+EXPORTS
+TIFFGetVersion             @1
+TIFFClose                  @2
+TIFFFlush                  @3
+TIFFFlushData              @4
+TIFFGetField               @5
+TIFFVGetField              @6
+TIFFGetFieldDefaulted      @7
+TIFFVGetFieldDefaulted     @8
+TIFFReadDirectory          @9
+TIFFScanlineSize           @10
+TIFFStripSize              @11
+TIFFVStripSize             @12
+TIFFTileRowSize            @13
+TIFFTileSize               @14
+TIFFVTileSize              @15
+TIFFFileno                 @16
+TIFFGetMode                @17
+TIFFIsTiled                @18
+TIFFIsByteSwapped          @19
+TIFFCurrentRow             @20
+TIFFCurrentDirectory       @21
+TIFFCurrentStrip           @22
+TIFFCurrentTile            @23
+TIFFReadBufferSetup        @24
+TIFFLastDirectory          @25
+TIFFSetDirectory           @26
+TIFFSetSubDirectory        @27
+TIFFUnlinkDirectory        @28
+TIFFSetField               @29
+TIFFVSetField              @30
+TIFFWriteDirectory         @31
+TIFFReadScanline           @32
+TIFFWriteScanline          @33
+TIFFReadRGBAImage          @34
+TIFFOpen                   @35
+TIFFFdOpen                 @36
+TIFFClientOpen             @37
+TIFFFileName         		 @38
+TIFFError                  @39
+TIFFWarning                @40
+TIFFSetErrorHandler        @41
+TIFFSetWarningHandler      @42
+TIFFComputeTile            @43
+TIFFCheckTile              @44
+TIFFNumberOfTiles          @45
+TIFFReadTile               @46
+TIFFWriteTile              @47
+TIFFComputeStrip           @48
+TIFFNumberOfStrips         @49
+TIFFReadEncodedStrip       @50
+TIFFReadRawStrip           @51
+TIFFReadEncodedTile        @52
+TIFFReadRawTile            @53
+TIFFWriteEncodedStrip      @54
+TIFFWriteRawStrip          @55
+TIFFWriteEncodedTile       @56
+TIFFWriteRawTile           @57
+TIFFSetWriteOffset         @58
+TIFFSwabShort              @59
+TIFFSwabLong               @60
+TIFFSwabArrayOfShort       @61
+TIFFSwabArrayOfLong        @62
+TIFFReverseBits            @63
+TIFFGetBitRevTable         @64
+;TIFFModeCCITTFax3          @65		// removed - not used ?
+;
+
+;
+; for memory IO
+_TIFFmalloc				@70
+_TIFFfree				@71
+_TIFFmemcpy				@72
+TIFFSwabArrayOfDouble	@73

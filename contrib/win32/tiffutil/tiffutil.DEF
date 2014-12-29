@@ -1,0 +1,13 @@
+; Module-Definition file for GENERIC -- used by LINK.EXE
+; ==========================================================================
+; This isn't really needed for an Application, but it's handy to use for
+; setting the 'Description' text
+NAME         TIFFUTIL       ; application's module name
+DESCRIPTION  'Sample Microsoft Windows Application'
+
+EXPORTS
+	WndProc
+; added after P. Tenehaus
+LoadTIFFinDIB				@66
+
+
